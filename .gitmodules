@@ -3,5 +3,5 @@
 	url = https://github.com/gcushen/hugo-academic.git
 [submodule "suyinyin.github.io"]
 	path = suyinyin.github.io
-	url = https://github.com/suyinyin/suyinyin.github.io.git
+	url = https://github.com/suyinyin/suyinyin.github.io
 	branch = master

@@ -116,6 +116,7 @@ contact_links = [
   {icon = "skype", icon_pack = "fab", name = "Skype Me", link = "skype:live:suyinyin1991?call"},
   {icon = "weixin", icon_pack = "fab", name = "@ me", link = "media/QR_weixin.jpg"},
   {icon = "facebook", icon_pack = "fab", name = "@ me", link = "https://www.facebook.com/christopher.su.1447/"},
+  {icon = "linkedin", icon_pack = "fab", name = "Link me",link = "https://www.linkedin.com/in/su-yinyin-ba0983199/"},
   #{icon = "comments", icon_pack = "fas", name = "Discuss on Forum", link = "https://discourse.gohugo.io"},
   # {icon = "telegram", icon_pack = "fab", name = "Telegram Me", link = "https://telegram.me/@Telegram"},
   ]
