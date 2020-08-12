@@ -8,8 +8,12 @@ title: Ros in Ubuntu
 view: 2
 
 # Optional header image (relative to `static/media/` folder).
-header:
-  caption: "Some tips using ROS in Ubunu."
-  image: ""
+#header:
+##  image: ""
+
+image:
+  caption: "ROS"
+  focal_point: ""
+  preview_only: true
 ---
 <i class="fab fa-ubuntu"></i> ROS+UBUNTU

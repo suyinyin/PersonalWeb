@@ -8,7 +8,8 @@ title: Inspired papers
 view: 2
 
 # Optional header image (relative to `static/media/` folder).
-header:
-  caption: ""
-  image: ""
+image:
+  caption: "Papers"
+  focal_point: ""
+  preview_only: true
 ---
