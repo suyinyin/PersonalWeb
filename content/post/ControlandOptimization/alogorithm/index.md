@@ -5,7 +5,7 @@ title: "Alogorithm"
 subtitle: ""
 summary: ""
 authors: []
-tags: []
+tags: ["Optimization", "Control"]
 categories: []
 date: 2020-08-11T16:18:34+08:00
 lastmod: 2020-08-11T16:18:34+08:00
