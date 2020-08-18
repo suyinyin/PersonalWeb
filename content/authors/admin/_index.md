@@ -29,13 +29,13 @@ interests:
 education:
   courses:
   - course: PhD in Control and Robotics
-    institution: The University of Hong Kong
+    institution: The University of Hong Kong, Hong Kong SAR, China
     year: 2020 - present
   - course: MA. SC in General and Fundamental Mechanics
-    institution: Institute of Mechanics, Chinese Academy of Sciences
+    institution: Institute of Mechanics, Chinese Academy of Sciences, Beijing, China
     year: 2014 - 2017
   - course: B.Eng. in Engineering Mechanics
-    institution: Northeastern University
+    institution: Northeastern University, Shenyang, China
     year: 2010 - 2014
 
 # Social/Academic Networking
