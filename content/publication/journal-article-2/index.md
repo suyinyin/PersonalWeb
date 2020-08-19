@@ -39,10 +39,10 @@ tags:
 - Microgravity washing machine
 featured: false
 
-# links:
-# - name: ""
-#   url: ""
-url_pdf: http://image.oversea.cnki.net/Kcms/detail/detail.aspx?filename=ZRHT201801021&dbcode=CJFQ&dbname=CJFD2018
+#links:
+ #- name: Custom Link
+#   url: http://image.oversea.cnki.net/Kcms/detail/detail.aspx?filename=ZRHT201801021&dbcode=CJFQ&dbname=CJFD2018
+url_pdf: files/numerical-simulation-of-flow.pdf
 url_code: ''
 url_dataset: ''
 url_poster: ''

@@ -3,6 +3,7 @@ title: "Study of Capillary Driven Flow in an Interior Corner of Rounded Wall und
 authors:
 - Yongqiang Li
 - Mingzhu Hu
+- Ling Liu
 - admin
 - Li Duan
 - Qi Kang
@@ -37,10 +38,10 @@ tags:
 - Microgravity fluid
 featured: false
 
-# links:
-# - name: ""
-#   url: ""
-url_pdf: https://link.springer.com/article/10.1007/s12217-015-9435-z
+#links:
+#- name: Custom Link
+#  url: https://link.springer.com/article/10.1007/s12217-015-9435-z
+url_pdf: files/study-of-capillary.pdf
 url_code: ''
 url_dataset: ''
 url_poster: ''

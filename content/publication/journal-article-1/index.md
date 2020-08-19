@@ -40,10 +40,10 @@ tags:
 - soft origamic actuators
 featured: false
 
-# links:
-# - name: ""
-#   url: ""
-url_pdf: https://ieeexplore.ieee.org/document/9000583/keywords#keywords
+#links:
+#- name: Custom Link
+#   url: https://ieeexplore.ieee.org/document/9000583
+url_pdf: files/high-payload-proprioceptive.pdf
 url_code: ''
 url_dataset: ''
 url_poster: ''

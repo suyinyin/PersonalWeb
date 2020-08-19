@@ -39,10 +39,9 @@ tags:
 - Shijian-10
 featured: false
 
-# links:
-# - name: ""
-#   url: ""
-url_pdf: https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/volume-ratio-effect-on-flow-patterns-and-transition-processes-of-thermocapillary-convection/6CF1F11E9F05C5079AF271D024DDAB9A
+#- name: 'Custom Link'
+#url: ''
+url_pdf: files/the-volume-ratio.pdf
 url_code: ''
 url_dataset: ''
 url_poster: ''

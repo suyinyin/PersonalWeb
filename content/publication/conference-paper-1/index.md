@@ -6,7 +6,7 @@ authors:
 - Abderrahmane Kheddar
 
 date: "2018-06-01T00:00:00Z"
-doi: ""
+doi: "10.1109/HUMANOIDS.2018.8624974"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2019-01-24T00:00:00Z"
@@ -31,9 +31,9 @@ tags:
 featured: true
 
 links:
-- name: Custom Link
+- name: IEEE
   url: https://ieeexplore.ieee.org/document/8624974/keywords#keywords
-url_pdf: https://ieeexplore.ieee.org/document/8624974/keywords#keywords
+url_pdf: files/sample-efficient.pdf
 url_code: ''
 url_dataset: ''
 url_poster: ''
