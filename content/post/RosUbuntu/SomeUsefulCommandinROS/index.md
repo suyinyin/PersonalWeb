@@ -4,7 +4,8 @@
 title: "Some useful commands for ROS in Ubuntu"
 subtitle: ""
 summary: ""
-authors: []
+authors:
+- admin
 tags: ["ROS", "Ubuntu"]
 categories: []
 date: 2020-08-11T15:34:21+08:00
