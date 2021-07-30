@@ -93,14 +93,15 @@ phone = "+86-189-0243-8607"
 
 # Address
 # For country_code, use the 2-letter ISO code (see https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 )
-address = {street = "Dachongdushihuayuan Nanshan district", city = "Shenzhen", region = "Guangdong", postcode = "440305", country = "China", country_code = "CN"}
+#address = {street = "Dachongdushihuayuan Nanshan district", city = "Shenzhen", region = "Guangdong", postcode = "440305", country = "China", country_code = "CN"}
+address = {street = "Room 216A, Haking Wong Building, The University of Hong Kong", city = "Central And Western District", region = "Hong Kong SAR", postcode = "000000", country = "China", country_code = "HK"}
 
 # Geographic coordinates
 # To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
-coordinates = {latitude = "22.5465", longitude = "113.9485"}
-
+# coordinates = {latitude = "22.5465", longitude = "113.9485"}
+coordinates = {latitude = "22.283270", longitude = "114.136636"}
 # Directions for visitors to locate you.
-directions = "H26D"
+#directions = "H26D"
 
 # Office hours
 # A list of your office hours. To remove, set to an empty list `[]`.
@@ -216,6 +217,7 @@ plugins_js  = []
   post_view = 2
   publication_view = 2
   talk_view = 2
+  project_view = 3
 
 ############################
 ## Comments

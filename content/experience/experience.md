@@ -5,7 +5,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 40  # Order that this section will appear.
 
-title = "Experiences"
+title = "Professional Experiences"
 subtitle = ""
 
 # Date format for experience
@@ -23,7 +23,7 @@ date_format = "Jan 2006"
   company_url = "https://www.sustech.edu.cn/en/"
   location = "Shenzhen, China"
   date_start = "2019-04-01"
-  date_end = "2019-07-31"
+  date_end = "2020-07-31"
   description = """
   Responsibilities include:
 

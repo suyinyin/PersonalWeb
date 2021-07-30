@@ -30,8 +30,7 @@ image:
 projects: []
 ---
 <!-- # Three dimensional camera techniques -->
-<!-- > **Written by Yinyin SU on 16th December 2020**
-> **E-mail: <yinyinsu1991@gmail.com>** -->
+
 
 Recently, 3D cameras have been widely used in various computer vision applications, like robotics, autonomous driving. Leveraging the extra data provided by such sensors allows for better performance on tasks such as detection and recognition, pose estimation, 3D reconstruction, and so forth. The post presented some common knowledge about the 3D cameras, including the overview of the most common 3D sensing techniques on the markets and their underlying mechanisms, some camera calibration technology, hand-eye calibration methods, mapping depth to point cloud.
 ### 1. 3D camera technique
@@ -101,6 +100,7 @@ By combining all the mentioned transform matrix, the objects in 3D real-world sp
   <img src="./pinhole_model.png" alt="Sublime's custom image" width = 600 height = 300 />
   <em>Pinhole camera model</em>
 </p>
+
 #### 2.2 Lens Distortion Model
 Most cameras on the market are made up of convex lens to capture light, which brings some issues to be addressed: [1. have finite aperture so a blurring of unfocused objects appears; 2. contain geometric distortions due to lenses, which increase as we get closer to the edges of the lenses](https://ori.codes/artificial-intelligence/camera-calibration/camera-distortions/#fn:1). The most common type of camera lens distortion is called radial distortion, including positive or barrel radial distortion and negative or pincushion radial distortion, as depicted in the below figure.
 <!-- ![@ Radial distortion of lens camera | center | 600X0](./radial.png) -->
@@ -124,7 +124,7 @@ $${y}'=y\\frac{1+{{k}\_{1}}{{r}^{2}}+{{k}\_{2}}{{r}^{4}}+{{k}\_{3}}{{r}^{6}}}{1+
 where ${{r}^{2}}={{x}^{2}}+{{y}^{2}}$, $u={{f}\_{x}}\cdot {x}'+{{o}\_{x}}$ and $v={{f}\_{y}}\cdot {y}'+{{o}_{y}}$. Since we're primarily interested in efficiently removing the radial distortion, we'll be using **Fitzgibbon's division** model as opposed to **Brown-Conrady's even-order polynomial model**, since it requires fewer terms in cases of severe distortion. [It is also a bit easier to work with since inverting the single parameter division model requires solving one degree less polynomial than inverting the single-parameter polynomial model](http://www.cs.ait.ac.th/~mdailey/papers/Bukhari-RadialDistortion.pdf).
 #### 2.3. A Flexible New Technique for Camera
 In this subsection, we will talk about some popular camera calibration techniques. In terms of the calibrated object used in camera calibration, four major methods have been applied in different fields: calibration using **3D calibration object, calibrating using the 2D planar pattern, calibration using the 1D object (line-based calibration), and self-calibration, which is no calibration objects**. For the 3D method, calibration is performed by observing a calibration object whose geometry in 3D space is known with very good precision. The object often contains two or three orthogonal to each other, e.g. calibration cube, and it has a plane undergoing a precisely known translation. Although the 3D method is an expensive and more elaborate setup, it is more accurate and has a simple theory. The 2D plan-base calibration requires observation of a planar pattern shown at a few different orientations. Mostly, a popular planar pattern is a [checkerboard](https://markhedleyjones.com/projects/calibration-checkerboard-collection). Owing to the easy setup, the 2D method is the most popular one. In this post, we concentrate on the 2D plan-based calibration method. You can refer to the lectures of Ahmed Elgammal for other methods and their [comparisons](https://www.cs.rutgers.edu/~elgammal/classes/cs534/lectures/Calibration.pdf). Here, we will pay more attention to the contributions in A Flexible New Technique for Camera presented by [Zhengyou Zhang](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr98-71.pdf), which is the most popular 2D calibration approach.
-Firstly, setting the world coordinate system to the corner of the checkerboard, and axis z is perpendicular outward to the checkerboard. Due to all points lying in a plane, the z value of all points in the checkerboard is zero, namely $\textbf W = 0$ . So the 3-rd Colum of the extrinsic matrix will vanish, and the camera model becomes:
+Firstly, setting the world coordinate system to the corner of the checkerboard, and axis z is perpendicular outward to the checkerboard. Due to all points lying in a plane, the z value of all points in the checkerboard is zero, namely $ W = 0$ . So the 3rd Colum of the extrinsic matrix will vanish, and the camera model becomes:
 $$\\lambda \\left[ \\begin{matrix}
    u  \\\\
    v  \\\\
@@ -226,10 +226,11 @@ problem can be formulated as $𝑨𝑿 = 𝑿𝑩$, where $𝑨$ and $𝑩$ are 
 #### 3.1 Eye-to-hand intallment
 ![@Eye-to-hand way | center](./eye_to_hand.png)
 As shown in above figure, this is the eye-to-hand type installment, that is, the camera is installed in the fixed position from which the base of robotic arm has a constant relative position.
-> {B} -- The base coordinate system of robotic arm
-> {E} -- The end-effector coordinate system
-> {S} -- The checkerboarder coordinate system
-> {C} -- The camera coordinate system (generally the RGB sensor coordinate system)
+
+> {$\\textbf B$} -- The base coordinate system of robotic arm \
+> {$\\textbf E$} -- The end-effector coordinate system \
+> {$\\textbf S$} -- The checkerboarder coordinate system \
+> {$\\textbf C$} -- The camera coordinate system (generally the RGB sensor coordinate system)
 
 From  base coordinate $\{\text B \}$ to  camera coordinate $\{\text C \}$, the homogeneous tranformation matrix can be derived as follows:
 $${{T}\_{\text{BC}}}=T_{\text{BE}}^{1}\cdot T_{\text{ES}}^{1}\cdot T_{\text{SC}}^{1}=T_{\text{BE}}^{2}\cdot T_{\text{ES}}^{2}\cdot T_{\text{SC}}^{2}$$
@@ -255,6 +256,19 @@ So the problem becomes how to solve the above equation, many previous works has 
 > - [x] 4. [Hand-eye calibration using dual quaternions.](https://journals.sagepub.com/doi/abs/10.1177/02783649922066213)(**The International Journal of Robotics Research**)
 
 ### 4. Alighnment
+In the robotic field, often find objects from the color image, and then calculate the corresponding 3D coordinate value by combining the related depth value. Before the above procedure, need to align the depth image to color image (depth registration).
+<!-- ![@Alighment1 | center | 100X0 ](./alignment1.png) -->
+<p align="center">
+  <img src="./alignment1.png" alt="Sublime's custom image" width = 500 />
+</p>
+Homogeneous transformation matrix $T_{CW}$ and $T_{DW}$ can be obtained through the above calibration method, so the matrix $T_{CD}$ is
+$${{\text{T}}_{\text{CD}}}={{\text{T}}_{\text{CW}}}\text{T}_{\text{DW}}^{-1}$$
+
+The alignned result is shown as follows.
+![@Alighment2 | center ](./alignment2.png)
+
+
+
 
 ### 5. Mapping depth image to point cloud
 In the section, we will discuss on how to reconstruct the 3 dimensional point in the real-world space from the pixel images and the corresponding depth image (alighn the depth images  to the color images). Namely, after we already have the pixel point $u, v$ and depth value $\lambda$,  how we can obtain the related point cloud in thei real-world space, which is of importance in vision servoing of robotics.  In the section, we know that

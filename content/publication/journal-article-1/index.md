@@ -38,19 +38,19 @@ summary: Hybrid robotic gripper, soft origamic actuators, POSA joint, higher for
 tags:
 - proprioception
 - soft origamic actuators
-featured: false
+featured: true
 
-#links:
-#- name: Custom Link
-#   url: https://ieeexplore.ieee.org/document/9000583
-url_pdf: files/high-payload-proprioceptive.pdf
+links:
+- name: IEEE
+  url: https://ieeexplore.ieee.org/document/9000583
+url_pdf: "files/high-payload-proprioceptive.pdf"
 url_code: ''
 url_dataset: ''
 url_poster: ''
 url_project: ''
-url_slides: ''
+url_slides: "files/ICRA2020Presentation.pdf"
 url_source: ''
-url_video: https://www.youtube.com/watch?v=jMRQAr8MuPI&t=1s
+url_video: "https://www.youtube.com/watch?v=jMRQAr8MuPI&t=1s"
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -71,7 +71,7 @@ projects: []
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
-slides: example
+slides: ""
 ---
 <!-- {{< figure src="featured.png" title="The file structure of workplace" numbered="true" >}} -->
 <!-- {{% alert note %}}
